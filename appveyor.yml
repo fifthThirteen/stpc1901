@@ -1,8 +1,10 @@
-version: 0.1.{build}
+version: v0.1.{build}
 
 branches:
   only:
     - master
+    - production
+    - /v\d*\.\d*\.\d*/
 
 image: Visual Studio 2017
 platform:
