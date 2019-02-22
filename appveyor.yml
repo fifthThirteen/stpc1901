@@ -36,7 +36,22 @@ test: off
 environment:
   GH_TOKEN: 
     secure: 1Hewqi8gOkLhCGZVhHGj2hZjUyiCRpITSUUyKxRdk3eqedCF1bK18wCNPB+Dbnqn
+  DEBUG: electron-builder
 
 configuration:
-  - Debug
   - Release
+
+pull_requests:
+  do_not_increment_build_number: true
+
+skip_non_tags: true
+
+before_build:
+- cmd: nuget restore
+
+build:
+  verbosity: minimal
+
+artifacts:
+- path: $(APPVEYOR_PROJECT_NAME)\build\Release
+  name: $(APPVEYOR_PROJECT_NAME)-v$(APPVEYOR_REPO_TAG_NAME)
