@@ -36,3 +36,7 @@ test: off
 environment:
   GH_TOKEN: 
     secure: 1Hewqi8gOkLhCGZVhHGj2hZjUyiCRpITSUUyKxRdk3eqedCF1bK18wCNPB+Dbnqn
+
+configuration:
+  - Debug
+  - Release
