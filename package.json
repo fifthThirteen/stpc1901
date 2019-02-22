@@ -15,7 +15,7 @@
         "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
         "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
         "postinstall": "electron-builder install-app-deps",
-        "dist": "electron-builder --publish always"
+        "dist": "electron-builder --publish"
     },
     "build": {
         "productName": "stpc1901",
