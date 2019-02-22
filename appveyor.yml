@@ -33,7 +33,3 @@ test: off
 branches:
   only:
     - master
-
-environment:
-  GH_TOKEN:
-    secure:b94865ff1c57ffbb231adee0364fde3b2d1b1b66
