@@ -2,7 +2,7 @@
     "name": "stpc1901",
     "version": "0.0.1",
     "author": "fifthThirteen <570205219@qq.com>",
-    "description": "stgj1802 pc versiion",
+    "description": "stgj1802 pc version",
     "license": null,
     "main": "./dist/electron/main.js",
     "scripts": {
@@ -15,7 +15,7 @@
         "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
         "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
         "postinstall": "electron-builder install-app-deps",
-        "dist": "electron-builder --publish onTagOrDraft"
+        "dist": "electron-builder --publish always"
     },
     "build": {
         "productName": "stpc1901",
