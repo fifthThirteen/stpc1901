@@ -46,9 +46,6 @@ pull_requests:
 
 skip_non_tags: true
 
-build:
-  verbosity: minimal
-
 artifacts:
 - path: $(APPVEYOR_PROJECT_NAME)\build\Release
   name: $(APPVEYOR_PROJECT_NAME)-v$(APPVEYOR_REPO_TAG_NAME)
